@@ -1,0 +1,76 @@
+{
+  "version": "1.0",
+  "default_project": null,
+  "projects": {
+    "D:\\clinic_pro_web": {
+      "name": "clinic_pro_web",
+      "path": "D:\\clinic_pro_web",
+      "templates_dir": "D:\\clinic_pro_web\\templates",
+      "static_dir": "D:\\clinic_pro_web\\static",
+      "enabled": true
+    }
+  },
+  "replacement_settings": {
+    "create_backup": true,
+    "backup_dir_name": "backup_templates_{timestamp}",
+    "save_log": true,
+    "log_dir": "logs",
+    "dry_run_first": true
+  },
+  "cdn_mappings": {
+    "bootstrap_css": {
+      "pattern": "https?://(?:cdn\\.jsdelivr\\.net|stackpath\\.bootstrapcdn\\.com|maxcdn\\.bootstrapcdn\\.com)/.*?bootstrap(?:@[\\d\\.]+)?.*?\\.min\\.css[\\\"']?",
+      "replacement": "{% static 'css/auto_bootstrap.min.css' %}\"",
+      "enabled": true,
+      "description": "Bootstrap CSS Framework"
+    },
+    "bootstrap_js_bundle": {
+      "pattern": "https?://(?:cdn\\.jsdelivr\\.net|stackpath\\.bootstrapcdn\\.com|maxcdn\\.bootstrapcdn\\.com)/.*?bootstrap(?:@[\\d\\.]+)?.*?\\.bundle\\.min\\.js[\\\"']?",
+      "replacement": "{% static 'js/auto_bootstrap.bundle.min.js' %}\"",
+      "enabled": true,
+      "description": "Bootstrap JS Bundle (با Popper)"
+    },
+    "bootstrap_js": {
+      "pattern": "https?://(?:cdn\\.jsdelivr\\.net|stackpath\\.bootstrapcdn\\.com)/.*?bootstrap(?:@[\\d\\.]+)?.*?\\.min\\.js[\\\"']?",
+      "replacement": "{% static 'js/auto_bootstrap.min.js' %}\"",
+      "enabled": true,
+      "description": "Bootstrap JS (بدون Popper)"
+    },
+    "jquery": {
+      "pattern": "https?://(?:code\\.jquery\\.com|ajax\\.googleapis\\.com/ajax/libs/jquery)/jquery-[\\d\\.]+\\.min\\.js[\\\"']?",
+      "replacement": "{% static 'js/auto_jquery.min.js' %}\"",
+      "enabled": true,
+      "description": "jQuery Library"
+    },
+    "select2_js": {
+      "pattern": "https?://cdn\\.jsdelivr\\.net/npm/select2@[\\d\\.\\-rc]+/dist/js/select2\\.min\\.js[\\\"']?",
+      "replacement": "{% static 'js/auto_select2.min.js' %}\"",
+      "enabled": true,
+      "description": "Select2 JavaScript"
+    },
+    "select2_css": {
+      "pattern": "https?://cdn\\.jsdelivr\\.net/npm/select2@[\\d\\.\\-rc]+/dist/css/select2\\.min\\.css[\\\"']?",
+      "replacement": "{% static 'css/auto_select2.min.css' %}\"",
+      "enabled": true,
+      "description": "Select2 CSS"
+    },
+    "datatables_js": {
+      "pattern": "https?://cdn\\.datatables\\.net/[\\d\\.]+/js/jquery\\.dataTables\\.min\\.js[\\\"']?",
+      "replacement": "{% static 'js/auto_datatables.min.js' %}\"",
+      "enabled": true,
+      "description": "DataTables JavaScript"
+    },
+    "sweetalert2_js": {
+      "pattern": "https?://cdn\\.jsdelivr\\.net/npm/sweetalert2@[\\d\\.]+/dist/sweetalert2\\.(?:all\\.)?min\\.js[\\\"']?",
+      "replacement": "{% static 'js/auto_sweetalert2.min.js' %}\"",
+      "enabled": true,
+      "description": "SweetAlert2 JavaScript"
+    },
+    "font_awesome": {
+      "pattern": "https?://(?:cdnjs\\.cloudflare\\.com/ajax/libs/font-awesome|use\\.fontawesome\\.com/releases)/[\\d\\.]+/css/(?:all|fontawesome)\\.min\\.css[\\\"']?",
+      "replacement": "{% static 'auto_icons/fontawesome/css/all.min.css' %}\"",
+      "enabled": true,
+      "description": "Font Awesome Icons"
+    }
+  }
+}

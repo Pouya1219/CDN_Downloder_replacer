@@ -1,0 +1,13 @@
+# CDN to Local Replacer
+# نیازی به پکیج خارجی نداره!
+# همه چیز با Python Standard Library کار می‌کنه
+
+# برای توسعه‌دهندگان (اختیاری):
+# black>=23.0.0          # Code formatting
+# flake8>=6.0.0          # Linting
+# pytest>=7.0.0          # Testing
+
+# برای رنگی کردن خروجی (اختیاری):
+# colorama>=0.4.6        # Windows color support
+# rich>=13.0.0           # Beautiful terminal output
+requests>=2.31.0
