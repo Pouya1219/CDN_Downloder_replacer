@@ -31,7 +31,7 @@
 
 ```bash
 # کلون کردن
-git clone https://github.com/Pouya1219/cdn-replacer.git
+git clone https://github.com/Pouya1219/CDN_Downloder_replacer.git
 cd cdn-replacer
 
 # نیازی به نصب پکیج خارجی نیست!
@@ -53,4 +53,5 @@ python validate_project.py
 
 # 4. جایگزینی لینک‌ها
 python replace_cdn.py
+
 
